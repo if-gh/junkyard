@@ -1,0 +1,27 @@
+quota = 10240M
+tries = 9
+waitretry = 5
+reclevel = 6
+passive_ftp = off
+
+
+header = User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0
+localencoding = UTF-8
+remoteencoding = UTF-8
+secureprotocol = auto
+httpsonly = off
+robots = off
+prefer-family = IPv6
+timestamping = true
+wait = 1
+dirstruct = off
+recursive = off
+backup_converted = off
+follow_ftp = on
+iri = off
+dot_style = default
+
+#use_proxy = on
+#https_proxy = http://proxy.foobar.com:12345/
+#http_proxy = http://proxy.foobar.com:12345/
+#ftp_proxy = http://proxy.foobar.com:12345/

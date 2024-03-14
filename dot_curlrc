@@ -1,0 +1,26 @@
+user-agent = "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0"
+referer = ";auto"
+proto-default = http
+tcp-fastopen
+styled-output
+
+compressed-ssh
+compressed
+xattr
+
+fail-early
+show-error
+connect-timeout = 30
+expect100-timeout = 2
+keepalive-time = 120
+max-time = 600
+retry-connrefused
+retry-delay = 0
+retry-max-time = 0
+retry = 9
+
+insecure
+location
+
+remote-header-name
+remote-time

@@ -1,0 +1,14 @@
+/*Dracula theme based on the Purple official rofi theme*/
+
+configuration {
+    show-icons:      true;
+    display-drun:    "Applications";
+    disable-history: false;
+    icon-theme:      "Papirus";
+}
+
+@theme "dracula"
+
+listview {
+    lines: 12;
+}

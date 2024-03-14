@@ -1,0 +1,95 @@
+@define-color test rgba(1,1,1,1)
+
+* {
+  font-family: "Hack Nerd Font", "Symbols Nerd Font";
+  font-size: 20px;
+}
+
+window#waybar {
+  background: rgba(68, 71, 90, 0.8);
+  color: rgba(253, 246, 227, 0.8);
+}
+
+/* Separators */
+#custom-right-arrow-dark,
+#custom-left-arrow-dark {
+  color: rgba(40, 42, 54, 0.8);
+}
+#custom-right-arrow-light,
+#custom-left-arrow-light {
+  color: rgba(68, 71, 90, 0.8);
+  background: rgba(40, 42, 54, 0.8);
+}
+
+/* Left */
+#workspaces {
+  background: rgba(40, 42, 54, 0.8);
+}
+#workspaces button {
+  padding: 0 2px;
+  color: rgba(253, 246, 227, 1);
+}
+#workspaces button.focused {
+  color: rgba(38, 139, 210, 1);
+}
+#workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
+}
+#workspaces button:hover {
+  background: rgba(40, 42, 54, 0.8);
+  border: rgba(40, 42, 54, 0.8);
+  padding: 0 3px;
+}
+
+/* Center */
+#clock {
+  padding: 0 10px;
+}
+#clock.1,
+#clock.2,
+#clock.3 {
+  background: rgba(40, 42, 54, 0.8);
+}
+
+/* Right */
+#network,
+#keyboard-state,
+#pulseaudio,
+#memory,
+#cpu,
+#battery,
+#disk,
+#tray {
+  background: rgba(40, 42, 54, 0.8);
+}
+#network,
+#keyboard-state,
+#pulseaudio,
+#memory,
+#cpu,
+#battery,
+#disk {
+  padding: 0 10px;
+}
+#network {
+  color: rgba(98, 114, 164, 1);
+}
+#keyboard-state {
+  color: rgba(80, 250, 123, 1);
+}
+#pulseaudio {
+  color: rgba(38, 139, 210, 1);
+}
+#cpu {
+  color: rgba(189, 147, 249, 1);
+}
+#memory {
+  color: rgba(139, 233, 253, 1);
+}
+#disk {
+  color: rgba(255, 184, 108, 1);
+}
+#battery {
+  color: rgba(241, 250, 140, 1);
+}

@@ -1,0 +1,169 @@
+{
+  // Separators
+  "custom/left-arrow-dark": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/left-arrow-light": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/right-arrow-dark": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/right-arrow-light": {
+    "format": "",
+    "tooltip": false
+  },
+  // Modules
+  // Left
+  "hyprland/workspaces": {
+    "active-only": false,
+    "all-outputs": true,
+    "format": " {icon} {windows} ",
+    "format-icons": {
+      "active": "󰪥",
+      "default": "󰝦",
+      "special": "󰓏",
+      "1": "󰲡",
+      "2": "󰲣",
+      "3": "󰲥",
+      "4": "󰲧",
+      "5": "󰲩",
+      "6": "󰲫",
+      "7": "󰲭",
+      "8": "󰲯",
+      "9": "󰲱"
+    },
+    "persistent-workspaces": {
+      "*": 3
+    },
+    "show-special": true,
+    "sort-by": "DEFAULT",
+    "window-rewrite": {
+      "code": "<span color='#00a1f1'>󰨞</span>",
+      "dolphin": "<span color='#3482c1'>󱢴</span>",
+      "retroarch": "<span color='#fafafa'>󰯉</span>",
+      "steam": "<span color='#00adee'>󰓓</span>",
+      "class<firefox>": "<span color='#e66000'>󰈹</span>",
+      "class<firefox> title<.*amazon.*>": "<span color='#ff9900'></span>",
+      "class<firefox> title<.*archlinux.*>": "<span color='#1793d1'>󰣇</span>",
+      "class<firefox> title<.*github.*>": "<span color='#fafafa'>󰊤</span>",
+      "class<firefox> title<.*gmail.*>": "<span color='#dd4b39'>󰊫</span>",
+      "class<firefox> title<.*google.*>": "<span color='#dd4b39'>󰊭</span>",
+      "class<firefox> title<.*linkedin.*>": "<span color='#0a66c2'>󰌻</span>",
+      "class<firefox> title<.*outlook.*>": "<span color='#00a1f1'>󰴢</span>",
+      "class<firefox> title<.*youtube.*>": "<span color='#ff0000'>󰗃</span>",
+      "class<kitty>": "<span color='#ffb86c'>󰄛</span>"
+    },
+    "window-rewrite-default": "󰖯",
+    "format-window-separator": " ",
+    "ignore-workspaces": []
+  },
+  // Center
+  "clock#1": {
+    "format": "{:%a}",
+    "tooltip": false
+  },
+  "clock#2": {
+    "format": "{:%T %Z}",
+    "format-alt": "{:%r %Z}",
+    "tooltip": false
+  },
+  "clock#3": {
+    "format": "{:%b %d}",
+    "tooltip": false
+  },
+  // Right
+  "network": {
+    "interval": 2,
+    "format": "󰕒 {bandwidthUpBytes} 󰇚 {bandwidthDownBytes}"
+  },
+  "keyboard-state": {
+    "numlock": true,
+    "capslock": true,
+    "format": {
+      "numlock": "󰎦 {icon} ",
+      "capslock": "󰯫 {icon} "
+    },
+    "format-icons": {
+      "locked": "<span color='#ff5555'></span>",
+      "unlocked": "<span color='#50fa7b'></span>"
+    }
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume:2}%",
+    "format-bluetooth": "{icon}  {volume}%",
+    "format-muted": "󰝟",
+    "format-icons": {
+      "headphone": "󰋋",
+      "hands-free": "󰋎",
+      "headset": "󰋎",
+      "phone": "󰏲",
+      "portable": "󰏲",
+      "car": "󰄋",
+      "default": [
+        "󰕿",
+        "󰖀",
+        "󰕾"
+      ]
+    },
+    "scroll-step": 5,
+    "on-click": "pamixer -t",
+    "on-click-right": "pavucontrol"
+  },
+  "cpu": {
+    "interval": 2,
+    "format": "󰻠 {icon}{usage:2}%",
+    "format-icons": [
+      "<span color='#6c71c4'>▁</span>", // purple
+      "<span color='#69ff94'>▂</span>", // green
+      "<span color='#2aa9ff'>▃</span>", // blue
+      "<span color='#2aa9ff'>▄</span>", // blue
+      "<span color='#ffffa5'>▅</span>", // yellow
+      "<span color='#ffffa5'>▆</span>", // yellow
+      "<span color='#ff9977'>▇</span>", // orange
+      "<span color='#dd532e'>█</span>" // red
+    ]
+  },
+  "memory": {
+    "interval": 2,
+    "format": "󰘚 {used:0.1f}G/{total:0.1f}G"
+  },
+  "disk": {
+    "interval": 30,
+    "format": "󰋊 {percentage_used:2}%",
+    "path": "/"
+  },
+  "battery": {
+    "states": {
+      "good": 90,
+      "warning": 40,
+      "critical": 20
+    },
+    "format": "{icon} {capacity}%",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "tray": {
+    "icon-size": 20
+  },
+  // "gamemode": {
+  //   "format": "{glyph}",
+  //   "format-alt": "{glyph} {count}",
+  //   "glyph": "",
+  //   "hide-not-running": false,
+  //   "use-icon": true,
+  //   "icon-name": "input-gaming-symbolic",
+  //   "icon-spacing": 4,
+  //   "icon-size": 20,
+  //   "tooltip": true,
+  //   "tooltip-format": "Games running: {count}"
+  // }
+}

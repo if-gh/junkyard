@@ -1,0 +1,92 @@
+[user]
+    name = Yifan
+    email = 9148807+if-gh@users.noreply.github.com
+    signingkey = 0xB83F96399E818D19
+
+[core]
+    pager = less
+    autocrlf = input
+    compression = 9
+    editor=nvim
+    excludesfile = ~/.gitignore
+    attributesfile = ~/.gitattributes
+    whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+    trustctime = false
+    precomposeunicode = false
+    untrackedCache = true
+
+[help]
+    autocorrect = 1
+
+[init]
+    defaultBranch = main
+
+[commit]
+    gpgsign = true
+
+[push]
+    default = simple
+    followTags = true
+
+[pull]
+    ff = only
+
+[merge]
+    log = true
+
+[diff]
+    renames = copies
+
+[diff "bin"]
+    textconv = hexdump -v -C
+
+[apply]
+    whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+
+[branch]
+    sort = -committerdate
+
+[color]
+    ui = auto
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red
+    new = green
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
+[alias]
+    # List all defined aliases
+    aliases = config --get-regexp alias
+
+    # List contributors with number of commits.
+    contributors = shortlog --summary --numbered
+    # Show the user email for the current repository.
+    whoami = config user.email
+
+    # List things
+    tags = tag -l
+    branches = branch -a
+    remotes = remote -v
+
+    # Shorter commands
+    amend = commit --amend --reuse-message=HEAD
+    credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
+
+    # Even Shorter commands
+    c = clone --recursive
+    p = pull --recurse-submodules
+    l = log --pretty=oneline -n 20 --graph --abbrev-commit
+    s = status -s
+    d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+    di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
